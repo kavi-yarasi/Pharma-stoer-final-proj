@@ -1,0 +1,35 @@
+.navbar-custom{
+    background-color:#FDEEDC ;
+}
+fa{
+    font-family: 'font awesome';
+   }
+
+.form-control{
+    border-radius:5px;
+    width:500px;
+    margin-left:35px;
+}
+
+i{
+    margin-top: 15px;
+}
+
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 53%;
+    color:#F1A661;
+    margin-top:11px
+}
+
+.button-custom{
+    border:none;
+    color: black;
+    background-color: #FDEEDC;
+}
+
+.badge{
+    background-color: #F1A661;
+    color:#FDEEDC;
+}

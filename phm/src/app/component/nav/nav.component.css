@@ -1,0 +1,12 @@
+.navbar-custom{
+    background-color:#FDEEDC ;
+}
+fa{
+    font-family: 'font awesome';
+   }
+
+.form-control{
+    border-radius:5px;
+    width:500px;
+    margin-left:35px;
+}

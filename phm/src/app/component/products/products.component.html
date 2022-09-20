@@ -1,0 +1,47 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img class="icones" src="../../../assets/woman.png" alt="">
+                <h6>Women care</h6>
+            </a>
+        </div>&nbsp;&nbsp;
+        <div class="item">
+            <a href="">
+                <img class="icones" src="../../../assets/skincare.png" alt="">
+                <h6>Personal care</h6>
+            </a>
+        </div>&nbsp;&nbsp;
+        <div class="item">
+            <a href="">
+                <img class="icones" src="../../../assets/baby.png" alt="">
+                <h6>Newborn care</h6>
+            </a>
+        </div>&nbsp;&nbsp;
+        <div class="item">
+            <a href="">
+                <img class="icones" src="../../../assets/health-care.png" alt="">
+                <h6>Health and nutrition</h6>
+            </a>
+        </div>&nbsp;&nbsp;
+    </div>
+</div>
+<div class="container">
+    <div class="row cntr">
+        <div class="card col-md-2 sp box" *ngFor="let item of products | searchfilter:searchKey:'title'">
+            <img src="{{item.image}}" alt="">&nbsp;&nbsp;
+            <h6 class="heading">{{item.title}}</h6><br>
+            <p><strong>Price: ${{item.price}}</strong></p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button style="
+                font-size:xx-small;margin:auto;" type="button" class="btn" (click)="dec(item.id)"><i
+                        class="fa fa-minus"></i></button>
+                <span>{{item.cnt}}</span>
+                <button style="
+                font-size:xx-small;margin:auto;" (click)="inc(item.id)" type="button" class="btn"><i
+                        class="fa fa-plus"></i></button>
+            </div><br>
+            <!-- <button class="btn btn-sm button-custom" (click)="addCart(item)" name="">Add to cart</button> -->
+        </div>
+    </div>
+</div>

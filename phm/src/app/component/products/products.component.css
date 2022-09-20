@@ -1,0 +1,91 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFFFFF;
+    background-clip: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.25rem;
+}
+
+.icones {
+    width: 30px;
+    height: 30px;
+}
+
+.item a h6:hover {
+    text-decoration: underline;
+    text-decoration-color: #F1A661;
+    text-decoration-thickness: 3px;
+    transition-duration: 2ms;
+}
+
+.icones .item {
+    padding: 0;
+}
+
+.item h6 {
+    margin-top: 17px;
+}
+
+
+.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.item {
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 40%;
+    border: 1px solid #FDEEDC;
+}
+
+.item img {
+    margin-top: 18px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    
+}
+.heading{
+    height: 20%;
+}
+
+.card sp {
+    padding: 20px;
+    margin: 50px;
+    border-style: none;
+}
+
+.cntr {
+    margin-left: 3em;
+
+}
+
+.container .card button {
+    background-color: #F1A661;
+   
+}
+.card p{
+    margin-left: 37px;
+}
+.btn .fa-minus .fa-plus{
+    margin:0 8px;
+}

@@ -1,0 +1,17 @@
+<div class="navbar navbar-custom">
+   <div class="navbar-brand align-item-center d-flex">
+      <i style="font-size:25px" class=" fa fa-thin fa-stethoscope"> &nbsp;
+      </i>
+      <strong style="font-size:30px">U<span style="color:#E38B29">ON</span></strong>
+      <div class="form-group">
+         <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+            placeholder="What are you looking for?">
+      </div>
+      <span style="font-size:15px" class="fas fa-search search-icon"></span>
+   </div>
+   <button routerLink="/cart" class="btn button-custom shadow:none">
+      <i style="font-size: 25px" class="fa-solid fa-cart-plus"></i>
+      <div style="font-size:10px" class="badge custom-design">{{fnc()}}</div>
+   </button>
+
+   <!-- <button (click)="fnc()">Click</button> -->

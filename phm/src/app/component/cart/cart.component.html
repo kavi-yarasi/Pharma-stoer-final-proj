@@ -1,0 +1,27 @@
+<table class="table des">
+  <thead>
+    <tr>
+      <th scope="col">s.no</th>
+      <th scope="col">id.no</th>
+      <th scope="col">title</th>
+      <th scope="col">price</th>
+      <th scope="col">quantity</th>
+      <th scope="col">subtotal</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let i of data;">
+      <ng-container *ngIf="i.cnt>0">
+        <td >1</td>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.price}}</td>
+        <td>{{i.cnt}}</td>
+        <td>{{i.price*i.cnt}}</td>
+      </ng-container>
+    </tr>
+
+
+  </tbody>
+</table>

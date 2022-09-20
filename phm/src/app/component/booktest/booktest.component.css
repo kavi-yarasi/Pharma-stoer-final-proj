@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+ }
+ body{
+     margin:0;
+     padding:0;
+ }
+ .img-fluid
+ {
+    border:1px;
+    border-top-color: aqua;
+     
+ }
+ .custom-btn{
+     align-content:center;
+ }
