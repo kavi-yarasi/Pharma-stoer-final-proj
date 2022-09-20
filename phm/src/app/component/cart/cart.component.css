@@ -1,0 +1,11 @@
+.btn-custom{
+    background-color: #F1A661;
+    color:black;
+  
+}
+button .btn-custom{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,29 +1,42 @@
-
-   <body>
-    <form>
+<app-nav1></app-nav1>
+   <body class="container-fluid">
+    <form class="form-sjf"  [formGroup]="val1">
         <div class="form-row">
             <div class="col-lg-7">
                 <strong><label for="">Name</label></strong>
-                <input id="name" class="form-control" type="text" required minlength="5" placeholder="Name"formControlName="v1" >
+                <input id="name" class="form-control input-sm" type="text" required minlength="5" placeholder="Name"formControlName="v1" >
             </div>
         </div><br>
         <div class="form-row">
             <div class="col-lg-7">
                 <strong><label for="">Email</label></strong>
-                <input   id="email"class="form-control "type="text" required placeholder="Email" formControlName = "v3">
+                <input   id="email"class="form-control input-sm"type="text" required placeholder="Email" formControlName = "v3">
             </div>
         </div>
             <br>
             <div class="form-row">
                 <div class="col-lg-7">
                     <strong><label for="">Phone Number</label></strong>
-                <input id="phoneno" class="form-control "type="text" placeholder="Phone no" required minlength="10"   maxlength="10" formControlName = "v4">
+                <input id="phoneno" class="form-control input-sm"type="text" placeholder="Phone no" required minlength="10"   maxlength="10" formControlName = "v4">
                 </div>
             </div>
             <br>
+           <div class="form-row">
+            <div class="col-lg-7">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Lab tests</option>
+                    <option value="1">LFT</option>
+                    <option value="2">Insulin</option>
+                    <option value="3">Ferritin</option>
+                    <option value="4">Pottasiumserum Plasma</option>
+                    <option value="5">Chloesterol</option>
+                    <option value="6">Platelet count</option>
+                  </select>
+            </div>
+           </div>
             <div class="form-row" class="text-center">
                 <div class="col-lg-7">
-                    <button type="submit" class="btn btn-primary" (click)="fnc1()"> Submit </button>
+                    <button type="button"class="btn btn-custom" routerLink="/booktesdis"(click)="fnc1()"> Submit </button>
                 </div>
             </div><br>
     </form>

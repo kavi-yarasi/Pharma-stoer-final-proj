@@ -10,9 +10,21 @@ import { LoginservService } from 'src/app/service/loginserv.service';
 export class BooktestComponent implements OnInit {
 
   fnc1(){
-    this.router.navigate(['booktestdis']);
+    this.router.navigate(['booktesdis']);
   }
   constructor(public serve:LoginservService,public router:Router) { }
+
+  val1= new FormGroup({
+
+    v1:new FormControl(''),
+
+    v2:new FormControl(''),
+
+    v3: new FormControl(''),
+
+    v4:new FormControl('')
+
+       });
 
   ngOnInit(): void {
   }
