@@ -6,10 +6,11 @@ import { FormControl,FormGroup } from '@angular/forms';
 })
 export class LoginservService {
 
+    
   user:any=false;
   login:any=false;
 
-  val1= new FormGroup({
+  vall= new FormGroup({
 
     v1:new FormControl(''),
 
@@ -17,9 +18,18 @@ export class LoginservService {
 
     v3: new FormControl(''),
 
-    v4:new FormControl('')
-
+    
+    
        });
+       values={
+        v1:"",
+        v2:"",
+        v3:"",
+        
+        
+       };
+        
+     labtests=[{"id":1,"test":"LFT"},{"id":2,"test":"Insulin"},{"id":1,"test":"Ferritin"},{"id":1,"test":"Potassiumserum Plasma"},{"id":1,"test":"Chloesterol"},{"id":1,"test":"Platelet count"}]  
 
   products=[ 
     {
