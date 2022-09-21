@@ -18,11 +18,12 @@
         <td>{{i.title}}</td>
         <td>{{i.price}}</td>
         <td>{{i.cnt}}</td>
-        <td>{{i.price*i.cnt}}</td>
+        <td id="bill">{{i.price*i.cnt}}</td>
       </ng-container>
     </tr>
   </tbody>
 </table>
+<p id="b">Total : $ {{total}}</p>
 <button class="btn btn-custom" routerLink="/products">
  Back
 </button>

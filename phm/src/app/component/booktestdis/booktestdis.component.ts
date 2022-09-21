@@ -10,8 +10,6 @@ import { BooktestComponent } from '../booktest/booktest.component';
 })
 export class BooktestdisComponent implements OnInit {
 
-  
-
 
   constructor(public serv:LoginservService,public router:Router) { 
    

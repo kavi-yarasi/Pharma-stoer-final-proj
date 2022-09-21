@@ -29,7 +29,7 @@ export class LoginservService {
         
        };
         
-     labtests=[{"id":1,"test":"LFT"},{"id":2,"test":"Insulin"},{"id":1,"test":"Ferritin"},{"id":1,"test":"Potassiumserum Plasma"},{"id":1,"test":"Chloesterol"},{"id":1,"test":"Platelet count"}]  
+     labtests=[{"id":1,"test":"LFT"},{"id":2,"test":"Insulin"},{"id":3,"test":"Ferritin"},{"id":4,"test":"Potassiumserum Plasma"},{"id":5,"test":"Chloesterol"},{"id":6,"test":"Platelet count"}]  
 
   products=[ 
     {
