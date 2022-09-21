@@ -38,11 +38,8 @@ export class BooktestComponent implements OnInit {
   }
 
   ontestsel(val:any){
-  this.custfunc(val)
+   return (val)
   }
-  custfunc(val:any){
-    this.txt1="this value" +val+ "was selected"
-
-  }
+  
 
 }
