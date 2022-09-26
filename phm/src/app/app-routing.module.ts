@@ -6,7 +6,7 @@ import { LoginSignupComponent } from './component/login-signup/login-signup.comp
 import { SignupComponent } from './component/signup/signup.component';
 import { BooktestdisComponent } from './component/booktestdis/booktestdis.component';
 import { BooktestComponent } from './component/booktest/booktest.component';
-
+import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {path:'login',component:LoginSignupComponent},
   {path:'signup',component:SignupComponent},
@@ -14,7 +14,8 @@ const routes: Routes = [
   {path:'products',component:ProductsComponent},
   {path:'cart',component:CartComponent},
   {path:'booktesdis',component:BooktestdisComponent},
-  {path:'booktest',component:BooktestComponent}
+  {path:'booktest',component:BooktestComponent},
+  // {path:'login',component:LoginComponent},
 ];
 
 @NgModule({

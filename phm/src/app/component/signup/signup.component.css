@@ -13,7 +13,7 @@
 .card-header{
    font-size: 2em;
    font-weight: bold;
-   text-align: center;
+   text-align: left;
    background-color: #F1A661;
 }
 
@@ -46,10 +46,10 @@
 }
 
 
-/* .card{
+ .card{
    
     background-color: FFD8A9;
-} */
+} 
 
 .name{
     margin-bottom: .5em;
@@ -71,4 +71,4 @@
 }
 .name{
     margin-top: 1em;
-}
+} 

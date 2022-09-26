@@ -18,19 +18,14 @@ export class HeaderComponent implements OnInit {
     for (var i = 0; i < this.valu.length; i++) {
       this.tot += this.valu[i].cnt;
       // console.log(this.valu[i].cnt);
-
     }
-
-
   }
   fnc() {
     // console.log(this.valu[0].cnt);
     this.tot = 0
     for (var i = 0; i < this.valu.length; i++) {
       this.tot = this.tot + this.valu[i].cnt;
-
       // console.log(this.tot);
-
     }
     return this.tot
 
@@ -43,12 +38,9 @@ export class HeaderComponent implements OnInit {
 
     })
   }
-
-
   search(event: any) {
     this.searchTerm = (event.target as HTMLInputElement).value;
     console.log(this.searchTerm);
     this.cartService.search.next(this.searchTerm);
   }
-
 }

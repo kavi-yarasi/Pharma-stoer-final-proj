@@ -1,16 +1,16 @@
 <app-nav1></app-nav1>
    <body class="container-fluid">
-    <form class="form-sjf"  [formGroup]="vall">
+    <form class="form-sjf"  [formGroup]="vall" autocomplete="off">
         <div class="form-row">
             <div class="col-lg-7">
                 <strong><label for="">Name</label></strong>
-                <input id="name" class="form-control input-sm" type="text" required minlength="5" placeholder="Name"formControlName="v1" >
+                <input required id="name" class="form-control input-sm" type="text" placeholder="Name"formControlName="v1" />
             </div>
         </div><br>
         <div class="form-row">
             <div class="col-lg-7">
                 <strong><label for="">Email</label></strong>
-                <input   id="email"class="form-control input-sm"type="text" required placeholder="Email" formControlName = "v2">
+                <input required id="email"class="form-control input-sm"type="text" placeholder="Email" formControlName = "v2"/>
             </div>
         </div>
             <br>
@@ -23,7 +23,7 @@
             <br>
            <div class="form-row">
             <div class="col-lg-7">
-                <select [(ngModel)]="testsel" [ngModelOptions]="{standalone: true}"  (ngModelChange)="ontestsel($event)">
+                <select [(ngModel)]="testsel" [ngModelOptions]="{standalone: true}"  (ngModelChange)="ontestsel($event)" value="Select" placeholder="Select">
                     <option *ngFor="let t of test" [value]="t.Id">
                         {{t.Test}}
                     </option>
@@ -35,4 +35,4 @@
                     <button type="button"class="btn btn-custom" routerLink="/booktesdis"(click)="fnc1()"> Submit </button>
                 </div>
             </div><br>
-    </form>
+ <!-- </form> -->

@@ -28,6 +28,7 @@ export class BooktestComponent implements OnInit {
     { Id: 7, Test: "Platelet count" }
     ];
 
+
   }
   fnc1() {
     console.log(this.vall.value);
@@ -38,15 +39,14 @@ export class BooktestComponent implements OnInit {
     this.nm = this.testsel
     console.log();
     this.dta.v4 = JSON.stringify(this.test[this.nm - 1].Test);
-
-
-
     this.router.navigate(['booktesdis']);
   }
 
   ontestsel(val: any) {
     return (val)
   }
+
+
 
 
 }

@@ -20,17 +20,11 @@ export class ProductsComponent implements OnInit {
 
         })
     }
-
-
-
-
-
     inc(item: any) {
         this.dta.products[item - 1].cnt += 1
         console.log(this.dta.products[item - 1].cnt);
 
         // console.log(this.dta.products[item]);
-
     }
     dec(item: any) {
         if (this.dta.products[item - 1].cnt > 0) {

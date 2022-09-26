@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
   snup = new FormGroup({
-    name1: new FormControl(''),
-    mail1: new FormControl(''),
+    name1: new FormControl('',[Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')]),
+    mail1: new FormControl('',[Validators.required]),
     pw: new FormControl(''),
     pw1: new FormControl(''),
   });
@@ -69,7 +69,7 @@ export class SignupComponent implements OnInit {
     );
     this.serv.login = true;
     this.serv.user = JSON.stringify(this.snup.value.mail1).slice(1,6)+"....";
-    this.router.navigate(['products']);
+    this.router.navigate(['login']);
   }
 
 }

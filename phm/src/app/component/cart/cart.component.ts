@@ -7,10 +7,12 @@ import { LoginservService } from 'src/app/service/loginserv.service';
 })
 export class CartComponent implements OnInit {
   data = this.dta.products;
-  total:number=0;
-  constructor(public dta: LoginservService) { }
-
+  total: number = 0;
+  constructor(public dta: LoginservService) {
+    for (let index = 0; index < this.data.length; index++) {
+      this.total += (this.data[index].price * this.data[index].cnt)
+    }
+  }
   ngOnInit(): void {
   }
-
 }

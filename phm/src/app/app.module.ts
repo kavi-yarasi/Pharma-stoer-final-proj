@@ -14,6 +14,10 @@ import { SignupComponent } from './component/signup/signup.component';
 import { BooktestComponent } from './component/booktest/booktest.component';
 import { BooktestdisComponent } from './component/booktestdis/booktestdis.component';
 import { Nav1Component } from './nav1/nav1.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './login/login.component';
+// import { ReactiveFormsComponent } from './component/reactive-forms/reactive-forms.component';
+
 // import { NavComponent } from './compoent/nav/nav.component';
 
 @NgModule({
@@ -28,8 +32,7 @@ import { Nav1Component } from './nav1/nav1.component';
     BooktestComponent,
     BooktestdisComponent,
     Nav1Component,
-
-
+    LoginComponent,
 
   ],
   imports: [
@@ -38,7 +41,8 @@ import { Nav1Component } from './nav1/nav1.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
